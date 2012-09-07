@@ -107,3 +107,7 @@ set wrap "Wrap lines
 " => key binding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <A-s> :w<CR>
+map <C-J> <C-W>j<C-W>j
+map <C-K> <C-W>k<C-W>k
+map <C-H> <C-W>h<C-W>h
+map <C-L> <C-W>l<C-W>l
