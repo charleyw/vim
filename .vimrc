@@ -3,6 +3,10 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set guioptions-=m
 set guioptions-=T
+set guioptions-=l
+set guioptions-=r
+set guioptions-=b
+set guioptions-=L
 map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions-=T <Bar>
         \set guioptions-=m <bar>
@@ -11,17 +15,14 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions+=m <Bar>
     \endif<CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nu
 syntax on
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
 
-
-imap jj <Esc>
-
-colorscheme desert
+colorscheme wombat
+"colorscheme desert
 set background=dark
 set nocompatible
 
@@ -107,7 +108,4 @@ set wrap "Wrap lines
 " => key binding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <A-s> :w<CR>
-map <C-J> <C-W>j<C-W>j
-map <C-K> <C-W>k<C-W>k
-map <C-H> <C-W>h<C-W>h
-map <C-L> <C-W>l<C-W>l
+imap jj <Esc>
