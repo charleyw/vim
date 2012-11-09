@@ -16,6 +16,7 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
     \endif<CR>
 
 set nu
+call pathogen#infect()
 syntax on
 " Enable filetype plugins
 filetype plugin on
