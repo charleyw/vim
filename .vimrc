@@ -22,12 +22,12 @@ syntax on
 filetype plugin on
 filetype indent on
 
-colorscheme wombat
+colorscheme codeschool
 "colorscheme desert
 set background=dark
 set nocompatible
 
-set guifont=Consolas:h12
+set guifont=Consolas:h14
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -104,9 +104,8 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => key binding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <A-s> :w<CR>
+map <A-s> :w<CR>
 imap jj <Esc>
+map <C-e> :MRU<CR>
